@@ -1,0 +1,66 @@
+<html>
+<head>
+</head>
+<title>check</title>
+<body>
+
+         Texte a modifier : <textarea id="texte" rows="15" cols="30"></textarea><br/>
+         <script type="text/javascript">
+          function gras()
+            { document.getElementById('texte').style.fontWeight='bold'};
+        
+
+            function italiq()
+            {
+                   document.getElementById('texte').style.fontStyle='italic'};
+
+            
+            function souligne()
+            {
+               document.getElementById('texte').style.textDecoration='underline'};
+         
+         function famille(font){
+         
+          document.getElementById("texte").style.fontFamily = font.value;
+          
+        }
+         function taille(size){
+          document.getElementById("texte").style.fontSize = size.value;
+         }
+
+         
+         
+         </script> 
+
+         <input type="button" value="Mettre en gras" onclick="gras()"/><br/>
+         <input type="button" value="Mettre en italic" onclick="italiq()"/><br/>
+         <input type="button" value="Mettre souligne" onclick="souligne()"/><br/>
+         <select onchange="famille(this);"> 
+  
+          <option value="Georgia">Georgia</option>
+          <option value="Palatino Linotype">Palatino Linotype</option>
+          <option value="Book Antiqua">Book Antiqua</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Arial">Arial</option>
+          <option value="Helvetica">Helvetica</option>
+          <option value="Arial Black">Arial Black</option>
+          <option value="Impact">Impact</option>
+          <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+          <option value="Tahoma">Tahoma</option>
+          <option value="Verdana"> Verdana</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Lucida Console">Lucida Console</option>
+        </select>
+        <select onchange="taille(this);">
+          <option value="10px">10px</option>
+          <option value="20px">20px</option>
+          <option value="30px">30px</option>
+          <option value="40px">40px</option>
+          <option value="50px">50px</option>
+          <option value="60px">60px</option>
+          <option value="70px">70px</option>
+          <option value="80px">80px</option>
+        </select>
+ 
+            </body>
+</html>
